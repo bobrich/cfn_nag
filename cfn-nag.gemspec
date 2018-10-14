@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
   s.version       = ENV['GEM_VERSION'] || '0.0.0'
   s.bindir        = 'bin'
-  s.executables   = %w[cfn_nag cfn_nag_rules cfn_nag_scan]
+  s.executables   = %w[cfn_nag cfn_nag_rules cfn_nag_scan cfn_rest]
   s.authors       = ['Eric Kascic']
   s.summary       = 'cfn-nag'
   s.description   = 'Auditing tool for CloudFormation templates'
@@ -25,4 +25,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('logging', '~> 2.2.2')
   s.add_runtime_dependency('netaddr', '~> 1.5.1')
   s.add_runtime_dependency('trollop', '~> 2.1.2')
+  s.add_runtime_dependency('sinatra', '~> 2.0.4')
 end
